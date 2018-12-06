@@ -1,28 +1,97 @@
-var shpWrite = require('./').download;
-
-shpWrite({
-    type: 'FeatureCollection',
-    features: [
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [0, 0]
-            },
-            properties: {
-                foo: 'bar'
-            }
+shpwrite.download({
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "ship_id": 1
         },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Polygon',
-                coordinates:
-                    [[0, 0], [2, -10], [5, 10], [0,0]]
-            },
-            properties: {
-                foo: 'blah'
-            }
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                78.7005615234375,
+                24.647017162630366
+              ],
+              [
+                78.28857421875,
+                24.731864277701714
+              ],
+              [
+                77.87109375,
+                24.101632993396617
+              ],
+              [
+                79.2059326171875,
+                23.93103407144254
+              ],
+              [
+                79.6453857421875,
+                24.467150664739002
+              ],
+              [
+                78.7005615234375,
+                24.647017162630366
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "ship_id": 2
         },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                77.14599609375,
+                23.104996849988808
+              ],
+              [
+                77.14599609375,
+                23.674712836608773
+              ],
+              [
+                76.5911865234375,
+                23.46324633155036
+              ],
+              [
+                76.2066650390625,
+                22.836945920943855
+              ],
+              [
+                76.937255859375,
+                22.156883186860703
+              ],
+              [
+                78.3380126953125,
+                22.436417600763114
+              ],
+              [
+                78.55224609374999,
+                23.11004929735674
+              ],
+              [
+                77.14599609375,
+                23.104996849988808
+              ]
+            ]
+          ]
+        }
+      }
     ]
-});
+  });
